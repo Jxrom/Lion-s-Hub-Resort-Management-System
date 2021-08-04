@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/lion.png</file>
+    <file>icons/pay.png</file>
+    <file>icons/show.png</file>
+    <file>icons/print.png</file>
+    <file>icons/tree.png</file>
+    <file>icons/oceanlogo.png</file>
+    <file>icons/search.png</file>
+    <file>icons/update.png</file>
+    <file>icons/delete.png</file>
+    <file>icons/add.png</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>images/sky.jpg</file>
+    <file>images/resort.jpg</file>
+    <file>images/beach.jpg</file>
+    <file>images/image-removebg-preview.png</file>
+  </qresource>
+</RCC>

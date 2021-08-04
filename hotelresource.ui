@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Resort Management System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rsc.qrc">
+    <normaloff>:/icons/icons/lion.png</normaloff>:/icons/icons/lion.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>941</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(54, 141, 197);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="rsc.qrc">:/images/images/sky.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>940</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(248, 220, 209)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="rsc.qrc">:/images/images/resort.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table_widget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>601</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>120</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Guest Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Room No.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Room Type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Date Checked In</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Date Checked Out</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>110</y>
+      <width>311</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 20px</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>120</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Guest Information</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SetDate_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>500</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.397727 rgba(68, 164, 250, 255), stop:1 rgba(255, 255, 255, 255));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 12px;
+}
+
+
+QPushButton:pressed {
+	padding-left: 5px;
+	padding-top: 5px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>Set Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icons/icons/oceanlogo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title_Label">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>401</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lora</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lion's Hub Management System</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="GuestName_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>190</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 150);
+color: rgba(0, 0, 0, 240);
+padding-bottom: 7px;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Guest Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Email_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>250</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 150);
+color: rgba(0, 0, 0, 240);
+padding-bottom: 7px;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Room_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>310</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 150);
+color: rgba(0, 0, 0, 240);
+padding-bottom: 7px;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Room No.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="RoomType_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>370</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 150);
+color: rgba(0, 0, 0, 240);
+padding-bottom: 7px;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Room Type</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Status_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>430</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 150);
+color: rgba(0, 0, 0, 240);
+padding-bottom: 7px;
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Register_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>560</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.397727 rgba(68, 164, 250, 255), stop:1 rgba(255, 255, 255, 255));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 12px;
+}
+
+
+QPushButton:pressed {
+	padding-left: 5px;
+	padding-top: 5px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>Register</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="printText_window">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>601</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>601</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(163, 163, 163, 150);
+border-radius: 20px</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Delete_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>570</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image: url(:/icons/icons/delete.png);
+	background-color:rgba(138, 130, 122, 150);
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;	
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Update_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>570</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image:url(:/icons/icons/update.png);
+	background-color:rgba(133, 125, 119, 150);
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;	
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>570</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image:url(:/icons/icons/print.png);
+	background-color: rgba(131, 124, 117, 150);
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;	
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ID_Number_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	border: 2px solidrgb(255, 255, 255);
+	border-radius: 10px;
+	color: rgb(0, 0, 0);
+	padding-left: 20px;
+	padding-right: 2px;
+	background-color:rgb(232, 232, 232);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>ID NUMBER</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Show_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>570</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image: url(:/icons/icons/show.png);
+	background-color:rgba(128, 122, 115, 150);
+	border-radius: 10px;
+
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;	
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Pay_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>570</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image: url(:/icons/icons/pay.png);
+	background-color:rgba(130, 124, 117, 150);
+	border-radius: 10px
+}
+
+QPushButton:pressed{
+	padding-left: 5px;
+	padding-top: 5px;	
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>10</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+image: url(:/icons/icons/lion.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Developed By Jxrom (つ▀¯▀)つ</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>SetDate_PushButton</zorder>
+   <zorder>table_widget</zorder>
+   <zorder>label_6</zorder>
+   <zorder>Title_Label</zorder>
+   <zorder>GuestName_LineEdit</zorder>
+   <zorder>Email_LineEdit</zorder>
+   <zorder>Room_LineEdit</zorder>
+   <zorder>RoomType_LineEdit</zorder>
+   <zorder>Status_LineEdit</zorder>
+   <zorder>Register_PushButton</zorder>
+   <zorder>printText_window</zorder>
+   <zorder>label_3</zorder>
+   <zorder>Delete_PushButton</zorder>
+   <zorder>Update_PushButton</zorder>
+   <zorder>Print_PushButton</zorder>
+   <zorder>ID_Number_LineEdit</zorder>
+   <zorder>Show_PushButton</zorder>
+   <zorder>Pay_PushButton</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
