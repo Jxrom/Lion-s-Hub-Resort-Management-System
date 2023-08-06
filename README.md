@@ -2,7 +2,7 @@
 
 ## Description
 
-Hello! Welcome to my personal project! The motivation of this desktop application is to challenge my skills when it comes to programming in general, specifically targeting the concepts such as Object-Oriented Programming, Procedural Programming, Database Management and Software Designing. Basically, this is same as my first project "COVID-19 Management System (CRUD Applicaiton)" but with a more focus on software design and its functionality such as the PDF Export.
+Hello! Welcome to my personal project! The motivation of this desktop application is to challenge my skills when it comes to programming in general, specifically targeting concepts such as Object-Oriented Programming, Procedural Programming, Database management, and Software design. Basically, this is the same as my first project, "COVID-19 Management System (CRUD Application)," but with a greater focus on software design and its functionality, such as the PDF Export.
 
 ## Project Snippets
 
